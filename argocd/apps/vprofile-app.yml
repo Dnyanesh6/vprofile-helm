@@ -8,9 +8,9 @@ metadata:
 spec:
   project: vprofile
   source:
-    repoURL: git@github.com:<Dnyanesh6>/vprofile-helm.git
+    repoURL: git@github.com:Dnyanesh6/vprofile-helm.git
     targetRevision: main
-    path: helm/vprofile-chart
+    path: helm/vprofile
     helm:
       valueFiles:
         - values.yaml
