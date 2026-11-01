@@ -1,6 +1,6 @@
 defaultUser: guest
 app:
-  image: 563185858851.dkr.ecr.us-east-1.amazonaws.com/vprofileappimg
+  image: AWS_ECR_URL
   tag: 09cba47
   replicas: 1
   containerPort: 8080
@@ -36,7 +36,7 @@ initcontainers:
     - -c
 ingress:
   enabled: true
-  host: vprofile.dnyanesh.xyz
+  host: vprofile.YOUR_DOMAIN
   servicePort: 8080
 secrets:
   dbPassword: vprodbpass
